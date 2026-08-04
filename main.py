@@ -1,53 +1,36 @@
-# a = 10 
-# print(type(a))
+local = "feira"
+# frase =  "Vovó foi a %s" % local
+# print(frase)
 
-# frase = "Vovó foi a feira"
-# # print(type(frase))
+# frase = "Vovó foi a {}".format(local)
+# print(frase)
 
-# valor = 12.99
-# print(type(valor))
+# frase = f"Vovó foi a {local}"   
 
-# c, d = 15, 20
+# texto = "Vovó foi a feira"
 
-# bruto = 10
-# imposto = 5
+# resultado_split = texto.split(" ")
 
-# liquido = bruto - imposto
-
-# a = "Vovó foi a feira"
-# print(int(a))
-
-# print(type(a))
-
-# a = 12.99
-# print(type(a))
+# print(texto)
+# print(resultado_split)
 
 
-# a = "10"
+# texto = "Vovó foi a feira"
 
-# print(type(a))
+# resultado = texto.replace("feira", "praça")
 
-# c = int(a)
-
-# print(type(c))
-
-# b = 10
-
-# print(int(a) + b)
-
-# valor = None
-# print(type(valor))
+# print(resultado)
 
 
-# print(2 ** 2 ** 3)
+# texto = "Vovó foi - feira"
 
-# print((2 ** 2) ** 3)
+# resultado_split = texto.split("-")
 
-aluno = "Nome do aluno"
-
-print("Aluno: " + aluno)
-
+# resultado_join = " a ".join(resultado_split)
+# print(resultado_join)
 
 
+nome = "    fulano de tal    "
 
-
+nome_sem_spaco = nome.strip()
+print(nome_sem_spaco)
