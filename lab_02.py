@@ -1,12 +1,13 @@
-pessoa1 = input("Nome da primeira pessoa:")
-idade1 = int(input("Informe a idade da primeira pessoa:"))
+# lista_de_numeros = [3,5,6,10,52,9]
 
-pessoa2 = input("Nome da segunda pessoa:")
-idade2 = int(input("Informe a idade da segunda pessoa:"))
+# lista_ordenada = sorted(lista_de_numeros)
+# print(lista_ordenada)
 
-print(pessoa1, " é mais velho que ", pessoa2, " ?", idade1 > idade2  )
-print("Possuem a mesma idade? ", idade1 == idade2)
+# lista_ordenada_inverso = sorted(lista_de_numeros, reverse=True)
+# print(lista_ordenada_inverso)
 
-ambos_maior_idade = (idade1 >= 18) and (idade2 >= 18) 
+lista_original = ["Valor 001", True, ["Laranja", "Abacaxi"], "Outro valor"]
 
-print("Ambos são maior de idade?: ", ambos_maior_idade)
+sublista = lista_original[2]
+
+print(sublista)
