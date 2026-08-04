@@ -6,8 +6,8 @@
 # lista_ordenada_inverso = sorted(lista_de_numeros, reverse=True)
 # print(lista_ordenada_inverso)
 
-lista_original = ["Valor 001", True, ["Laranja", "Abacaxi"], "Outro valor"]
+# lista_original = ["Valor 001", True, ["Laranja", "Abacaxi"], "Outro valor"]
 
-sublista = lista_original[2]
+# sublista = lista_original[2]
 
-print(sublista)
+# print(sublista)
