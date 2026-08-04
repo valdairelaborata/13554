@@ -1,4 +1,4 @@
-local = "feira"
+# local = "feira"
 # frase =  "Vovó foi a %s" % local
 # print(frase)
 
@@ -17,7 +17,7 @@ local = "feira"
 
 # texto = "Vovó foi a feira"
 
-# resultado = texto.replace("feira", "praça")
+# resultado =  texto.replace("feira", "praça")
 
 # print(resultado)
 
@@ -30,7 +30,7 @@ local = "feira"
 # print(resultado_join)
 
 
-nome = "    fulano de tal    "
+# nome = "    fulano de tal    "
 
-nome_sem_spaco = nome.strip()
-print(nome_sem_spaco)
+# nome_sem_spaco = nome.strip()
+# print(nome_sem_spaco)

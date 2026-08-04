@@ -1,32 +1,11 @@
 
-# nome = input("Informe seu nome:")
-
-# nota1 = float(input("Nota 1:"))
-# nota2 = float(input("Nota 2:"))
-# nota3 = float(input("Nota 3:"))
-
-# media = (nota1 + nota2 + nota3) / 3
-
-# print("Aluno: " + nome )
-# # print("Média: " + str(media))
-# print("Média: ", media)
-# print("Tipo da variável média: ", type(media))
 
 
+string_original = "Curitiba, cidade modelo em transporte coletivo"
 
-nome = input("Informe seu nome:")
+substring_para_procurar = "Curitiba"
+substring_para_substituir = "Campo Largo"
 
-soma_notas = float(input("Nota 1:"))
-soma_notas = soma_notas + float(input("Nota 2:"))
-soma_notas += float(input("Nota 3:"))
+resultado =  string_original.replace(substring_para_procurar, substring_para_substituir )
 
-media = soma_notas / 3
-
-print("Aluno: " + nome )
-# print("Média: " + str(media))
-print("Média: ", media)
-print("Tipo da variável média: ", type(media))
-
-
-
-
+print(resultado)
