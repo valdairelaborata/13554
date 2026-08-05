@@ -1,13 +1,11 @@
-# lista_de_numeros = [3,5,6,10,52,9]
-
-# lista_ordenada = sorted(lista_de_numeros)
-# print(lista_ordenada)
-
-# lista_ordenada_inverso = sorted(lista_de_numeros, reverse=True)
-# print(lista_ordenada_inverso)
-
-# lista_original = ["Valor 001", True, ["Laranja", "Abacaxi"], "Outro valor"]
-
-# sublista = lista_original[2]
-
-# print(sublista)
+# Lab 2
+# 2) Faça um programa que dado o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+# a) Salários até R$ 1280,00 (incluindo) : aumento de 20%
+# b) Salários entre R$ 1280,00 e R$ 1700,00 : aumento de 15%
+# c) Salários entre R$ 1700,00 e R$ 2500,00 : aumento de 10%
+# d) Salários de R$ 2500,00 em diante : aumento de 5% 
+# Após o aumento ser realizado, informe na tela:
+# a) O salário antes do reajuste;
+# b) O percentual de aumento aplicado;
+# c) O valor do aumento;
+# d) O novo salário, após o aumento.

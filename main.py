@@ -1,36 +1,18 @@
-# local = "feira"
-# frase =  "Vovó foi a %s" % local
-# print(frase)
 
-# frase = "Vovó foi a {}".format(local)
-# print(frase)
+a = 1
 
-# frase = f"Vovó foi a {local}"   
+if a > 5:
+    print("É maior que cinco")
 
-# texto = "Vovó foi a feira"
+    if a > 20:
+        print("É maior que vinte")
+    elif a == 18:
+        print("É igual a 18")
 
-# resultado_split = texto.split(" ")
-
-# print(texto)
-# print(resultado_split)
-
-
-# texto = "Vovó foi a feira"
-
-# resultado =  texto.replace("feira", "praça")
-
-# print(resultado)
-
-
-# texto = "Vovó foi - feira"
-
-# resultado_split = texto.split("-")
-
-# resultado_join = " a ".join(resultado_split)
-# print(resultado_join)
-
-
-# nome = "    fulano de tal    "
-
-# nome_sem_spaco = nome.strip()
-# print(nome_sem_spaco)
+elif a == 5:
+    print("É igual a cinco")    
+elif a == 3:
+    print("É igual a três")
+else:
+    print("É menor que cinco")
+    
