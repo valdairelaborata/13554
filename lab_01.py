@@ -3,16 +3,12 @@
 usuario = " "
 senha = " "
 
-contador = 0
-
 while senha == usuario:  
 
-    if contador > 0:
-        print("usuario e senha não pode ser iqual")
- 
     usuario = input("digite o seu usuario: ")
     senha = input("digite sua senha: ")   
-    contador = contador + 1
+    if usuario == senha:
+        print("ERRO: A senha deve ser diferente do nome de usuário.")
 
 
 print("aprovado")  
