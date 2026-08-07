@@ -1,10 +1,18 @@
-# 1) Faça um programa que receba uma letra e verifique se esta é vogal ou consoante.
+# Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário. Mostre uma mensagem de erro e volte a pedir as informações.
 
-letra = input("A: ").lower()
+usuario = " "
+senha = " "
 
-vogais = ["a", "e", "i", "o", "u"]
+contador = 0
+
+while senha == usuario:  
+
+    if contador > 0:
+        print("usuario e senha não pode ser iqual")
  
-if letra in vogais:
-    print("É uma vogal")
-else:
-    print("É uma consoante")
+    usuario = input("digite o seu usuario: ")
+    senha = input("digite sua senha: ")   
+    contador = contador + 1
+
+
+print("aprovado")  
