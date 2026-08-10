@@ -1,14 +1,6 @@
-# Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário. Mostre uma mensagem de erro e volte a pedir as informações.
-
-usuario = " "
-senha = " "
-
-while senha == usuario:  
-
-    usuario = input("digite o seu usuario: ")
-    senha = input("digite sua senha: ")   
-    if usuario == senha:
-        print("ERRO: A senha deve ser diferente do nome de usuário.")
+# 1)	Faça um programa, com uma função que necessite de um argumento. A função retorna o valor de caractere ‘P’, se seu argumento for positivo, e ‘N’, se seu argumento for zero ou negativo.
 
 
-print("aprovado")  
+# 2)	Faça uma função anônima que informe a quantidade de dígitos de um determinado número inteiro informado.
+
+# 3)	Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos. 
