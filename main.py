@@ -1,24 +1,20 @@
 
+# arquivo = open("meu_arquivo.txt","r")
 
-# resultado_da_soma = 0
+# conteudo = arquivo.read()
+# conteudo = arquivo.readlines()
 
-# def soma(a = 0, b = 0):
-#     """Retorna o valor da soma"""
-#     resultado = int(a) + int(b)
-#     return resultado
+# arquivo.close()
 
-
-# resultado_da_soma = soma(5, 2)
-# print(resultado_da_soma)
-
-# # print(soma.__doc__)
-    
+# print(conteudo)
 
 
-# def numero():
-#     x = 10
-#     print(f"Valor dentro da função: {x}")
+arquivo = open("meu_arquivo_01.txt","w")
+arquivo.write("Dados escritos no arquivo")
 
-# x = 20
-# numero()
-# print(f"Valor fora da função: {x}")
+# conteudo = arquivo.read()
+# conteudo = arquivo.readlines()
+
+arquivo.close()
+
+# print(conteudo)

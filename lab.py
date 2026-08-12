@@ -1,23 +1,12 @@
-# 1)	Faça um programa, com uma função que necessite de um argumento. A função retorna o valor de caractere ‘P’, se seu argumento for positivo, e ‘N’, se seu argumento for zero ou negativo.
 
-def numero (a):
-    if a > 0:
-        return "P"
-    else:
-        return "N"
- 
-x = float(input("digite um numero positivo ou negativo: "))
-print(numero(x))
+# Dado um arquivo com uma lista de IPs, gere um segundo arquivo separando os IPs válidos dos
 
 
-# 2)	Faça uma função anônima que informe a quantidade de dígitos de um determinado número inteiro informado.
-
-digitos = lambda a: len(str(abs(a)))
- 
-numero = int(input("digite um numero: "))
-
-print(digitos(numero))
-
-
-# 3)	Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos. 
-
+200.135.80.9
+192.168.1.1
+8.35.67.74
+257.32.4.5
+85.345.1.2
+1.2.3.4
+9.8.234.5
+192.168.0.256
