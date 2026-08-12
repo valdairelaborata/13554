@@ -1,12 +1,38 @@
 
-# Dado um arquivo com uma lista de IPs, gere um segundo arquivo separando os IPs válidos dos
+# Dado um arquivo com uma lista de IPs, gere um segundo arquivo separando os IPs válidos dos inválidos.
+
+arquivo = open("ips.txt","r")
+lista_ips = arquivo.readlines()
+arquivo.close()
+
+lista_ips_invalidos = ["257.32.4.5", "85.345.1.2", "192.168.0.256"]
+
+lista_ips_validos = []
 
 
-200.135.80.9
-192.168.1.1
-8.35.67.74
-257.32.4.5
-85.345.1.2
-1.2.3.4
-9.8.234.5
-192.168.0.256
+for linha in lista_ips:
+    if linha in lista_ips_invalidos:
+        continue
+    else:
+        lista_ips_validos.append(linha)
+
+
+
+ips_resultado = open("ips_resultado.txt", "w", encoding="utf-8")
+ips_resultado.write("[ Endereços válidos:]\n")
+
+for ip in lista_ips_validos:
+    ips_resultado.write(ip)
+
+ips_resultado.write("\n")
+ips_resultado.write("\n")
+
+ips_resultado.write("[ Endereços inválidos:]\n")
+
+for ip in lista_ips_invalidos:
+    ips_resultado.write(ip)
+    ips_resultado.write("\n")
+
+
+ips_resultado.close()
+

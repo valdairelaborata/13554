@@ -1,27 +1,10 @@
-# def numero (a):
-#     if a > 0:
-#         return "P"
-#     else:
-#         return "N"
  
-# x = float(input("digite um numero positivo ou negativo: "))
-# print(numero(x))
-
-
-
-# Faça uma função anônima que informe a quantidade de dígitos de um determinado número inteiro informado.
-
-
-# digitos = lambda a: len(str(abs(a)))
+arquivo = open("ips.txt", "r")
+conteudo = arquivo.read()
+arquivo.close()
  
-# numero = int(input("digite um numero: "))
-
-# print(digitos(numero))
-
-
-def soma (a=0, b=0, c=0):
-    return int(a) + int(b) + int(c)
-resultado = soma (5, 8, 10)
-
-print(resultado)
-
+ 
+arquivo = open("ip.txt", "w")
+arquivo.write("[Endereços validos:]\n 200.135.80.9\n 192.168.1.1\n 8.35.67.74\n 257.32.4.5\n")
+arquivo.write("\n[Endereços invalidos:]\n 85.345.1.2\n 1.2.3.4\n 9.8.234.5\n 192.168.0.256\n")
+arquivo.close()

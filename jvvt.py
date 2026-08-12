@@ -1,39 +1,9 @@
-# def V_numero(valor):
-#     """Função que recebe e retorna um número:
-#         'P' se o número for positivo
-#         'N' se for zero ou negativo"""
-#     if valor > 0:
-#         return 'P'
-#     else:
-#         return 'N'
-
-    
-# numero = int(input("Digite um número: "))
-# resultado = V_numero(numero)
-# print(f"O resultado é: {resultado}")
-
-
-
-# Faça uma função anônima que informe a quantidade de dígitos de um determinado número inteiro informado.
-
-# digitos = lambda numero: len(str(abs(numero)))
-
-# numero = int(input("Digite um número inteiro: "))
-
-# print(f"O número {numero} possui {digitos(numero)} dígito(s).")
-
-
-def numeros(*args):
-    """Função que soma três números."""
-    return sum(args)
-
-
-numero1 = int(input("Digite o primeiro número: "))
-numero2 = int(input("Digite o segundo número: "))
-numero3 = int(input("Digite o terceiro número: "))
+arquivo = open("ips.txt", "r")
+conteudo = arquivo.read()
+arquivo.close()
  
-resultado = numeros(numero1,  numero3)
  
-print(f"A soma dos três números é: {resultado}")
-
- 
+arquivo = open("ip.txt", "w")
+arquivo.write("[Endereços validos:]\n 200.135.80.9\n 192.168.1.1\n 8.35.67.74\n 257.32.4.5\n")
+arquivo.write("\n[Endereços invalidos:]\n 85.345.1.2\n 1.2.3.4\n 9.8.234.5\n 192.168.0.256\n")
+arquivo.close()
