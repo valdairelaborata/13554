@@ -1,20 +1,56 @@
 
-# arquivo = open("meu_arquivo.txt","r")
-
-# conteudo = arquivo.read()
-# conteudo = arquivo.readlines()
-
-# arquivo.close()
-
-# print(conteudo)
+import os
 
 
-arquivo = open("meu_arquivo_01.txt","w")
-arquivo.write("Dados escritos no arquivo")
+# ambiente = os.getcwd()
 
-# conteudo = arquivo.read()
-# conteudo = arquivo.readlines()
+# ambiente = os.listdir()
 
-arquivo.close()
 
-# print(conteudo)
+# inicio = os.getcwd()
+
+# for root, dirs, files in os.walk(inicio):
+#     print("Root " + str(root))
+#     print("Dirs " + str(dirs))
+#     print("Files " + str(files))
+
+
+
+# ambiente = os.getcwd()
+# print("Inicial " + str(ambiente))
+
+# os.chdir("lab")
+
+# os.mkdir("exercicios")
+
+# os.chdir("exercicios")
+
+# os.makedirs("lab/exercicios")
+
+# os.chdir("lab")
+# os.rmdir("exercicios")
+
+# os.removedirs("lab/exercicios")
+
+
+# ambiente = os.getcwd()
+# print("Final " + str(ambiente))
+
+
+
+
+# script = __file__
+
+# print(script)
+
+# base = os.path.basename(__file__)
+
+# print(base)
+
+# base = os.path.dirname(__file__)
+
+# print(base)
+
+base = os.path.abspath(__file__)
+
+print(base)
