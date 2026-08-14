@@ -1,56 +1,33 @@
 
-import os
+# a = 10
+
+# if a > 0:
+#     print(a)
 
 
-# ambiente = os.getcwd()
+# texto = "Vovó foi a feira"
 
-# ambiente = os.listdir()
+# numero = int(texto)
 
+# arquivo = open("teste.txt","r")
 
-# inicio = os.getcwd()
-
-# for root, dirs, files in os.walk(inicio):
-#     print("Root " + str(root))
-#     print("Dirs " + str(dirs))
-#     print("Files " + str(files))
-
-
-
-# ambiente = os.getcwd()
-# print("Inicial " + str(ambiente))
-
-# os.chdir("lab")
-
-# os.mkdir("exercicios")
-
-# os.chdir("exercicios")
-
-# os.makedirs("lab/exercicios")
-
-# os.chdir("lab")
-# os.rmdir("exercicios")
-
-# os.removedirs("lab/exercicios")
+try:
+    arquivo = open("teste.txt","r")
+except:
+    arquivo = open("teste.txt","w")
+finally:
+    arquivo.close()
 
 
-# ambiente = os.getcwd()
-# print("Final " + str(ambiente))
+a = 0
+try:
+    divisao = 1 / int(a)
 
-
-
-
-# script = __file__
-
-# print(script)
-
-# base = os.path.basename(__file__)
-
-# print(base)
-
-# base = os.path.dirname(__file__)
-
-# print(base)
-
-base = os.path.abspath(__file__)
-
-print(base)
+except TypeError:
+    print("Valor não pode ser utilizado numa expressão com tipos incompatíveis")
+except ValueError:
+    print("Valor não pode ser convertido!")
+except ZeroDivisionError:
+    print("Não da pra dividir por zero(0)")
+except Exception:
+    print("Ocorreu um erro")
